@@ -18,7 +18,6 @@ html {
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: green;
 }
 ul {
   list-style: none;
@@ -48,6 +47,50 @@ ul {
   }
 }
 /* End Global Rules */
+/* Start Components */
+.main-heading {
+  text-align: center;
+  max-width: 405px;
+  margin-inline: auto;
+  padding-block: 100px;
+}
+.main-heading h2 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #1f2021;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 70px;
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: #1f2021;
+  bottom: -30px;
+  width: 100px;
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid #1f2021;
+  background-color: white;
+  bottom: -36px;
+}
+.main-heading p {
+  font-size: 13px;
+  line-height: 2;
+  color: #a8a8a8;
+}
+/* End Components */
 /* Start Header */
 header {
   position: absolute;
@@ -224,12 +267,4 @@ header nav .form i {
   background-color: var(--main-color);
   border-color: var(--main-color)
 }
-
-
-
-
-
-
-
-
 /* End Landing */
